@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://studypony.github.io</id>
+    <title>StudyPony&apos;s Blog</title>
+    <updated>2020-03-15T04:03:23.916Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://studypony.github.io"/>
+    <link rel="self" href="https://studypony.github.io/atom.xml"/>
+    <subtitle>Simple is Beauty. 简约即美。</subtitle>
+    <logo>https://studypony.github.io/images/avatar.png</logo>
+    <icon>https://studypony.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, StudyPony&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[爆炸与重生]]></title>
+        <id>https://studypony.github.io/4_M6ofNWw/</id>
+        <link href="https://studypony.github.io/4_M6ofNWw/">
+        </link>
+        <updated>2020-03-15T03:56:36.000Z</updated>
+        <content type="html"><![CDATA[<p>之前不知道为什么这个只有4篇posts的博客就这么爆炸了= =</p>
+<p>我通过笨手笨脚的逐一排查找到了原因，有关这一问题你可以查看这两个Issue</p>
+<p><a href="https://github.com/getgridea/gridea/issues/468">数据莫名其妙没了？... #468</a><br>
+(我发出来丢人的Issue，居然还有两三个小伙伴遇到了同样的问题)</p>
+<p><a href="https://github.com/getgridea/gridea/issues/472">封面图格式出错导致数据丢失 #472</a><br>
+(然后第一个回复我的dalao折腾了很久找出了他的原因，但似乎并不是我的原因...)</p>
+<p>我今天尝试了重新填入远程及主题参数（从之前的配置文件中手动复制出来的）然后暴力恢复原来的posts，但是会再次出现之前的问题...</p>
+<p>还是以后手动发一遍那些posts吧，不过我已经备份过 Gridea 路径了，出问题就给他还原回去...</p>
+<p>可能是文章里某些特殊字符惹的祸？我也没啥特殊字符啊...</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://studypony.github.io/hello-gridea/</id>
+        <link href="https://studypony.github.io/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
