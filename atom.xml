@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://studypony.github.io</id>
     <title>StudyPony&apos;s Blog</title>
-    <updated>2020-03-15T04:05:30.848Z</updated>
+    <updated>2020-03-15T07:49:26.144Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://studypony.github.io"/>
     <link rel="self" href="https://studypony.github.io/atom.xml"/>
@@ -10,6 +10,46 @@
     <logo>https://studypony.github.io/images/avatar.png</logo>
     <icon>https://studypony.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, StudyPony&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[1000：入门测试题目 【信息学奥赛一本通（C++版）在线评测系统】]]></title>
+        <id>https://studypony.github.io/_rukrrJJu/</id>
+        <link href="https://studypony.github.io/_rukrrJJu/">
+        </link>
+        <updated>2020-03-15T07:49:09.000Z</updated>
+        <content type="html"><![CDATA[<p>「原题」</p>
+<blockquote>
+<p>1000：入门测试题目<br>
+时间限制: 1000 ms         内存限制: 32768 KB<br>
+提交数: 0     通过数: 0<br>
+【题目描述】<br>
+求两个整数的和。<br>
+【输入】<br>
+一行，两个用空格隔开的整数。<br>
+【输出】<br>
+两个整数的和。<br>
+【输入样例】<br>
+1 2<br>
+【输出样例】<br>
+3</p>
+<p>【来源】</p>
+<p><a href="http://ybt.ssoier.cn:8088/">信息学奥赛一本通（C++版）在线评测系统</a></p>
+</blockquote>
+<p>「分析」<br>
+新手不用理会「时间限制」和「内存限制」，大多数情况下到很后面才会出现TLE（Time Limit Exceed，超时）和MLE（Memory Limit Exceed，内存溢出，超内存），关于这些OJ（Online Judge，在线判题）术语，可以在下表中了解。<br>
+https://blog.csdn.net/JNingWei/article/details/78425824<br>
+至于这个问题，就是一个简单的A+B问题。</p>
+<p>「源码」</p>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+int main() {
+	int a,b;
+	scanf(&quot;%d%d&quot;,&amp;a,&amp;b);
+	cout &lt;&lt; a+b &lt;&lt; endl;
+}
+</code></pre>
+<p>在此处进行复制等操作时，您应了解CC 4.0 BY-SA协议。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[爆炸与重生]]></title>
         <id>https://studypony.github.io/4_M6ofNWw/</id>
@@ -25,6 +65,7 @@
 <p>我今天尝试了重新填入远程及主题参数（从之前的配置文件中手动复制出来的）然后暴力恢复原来的posts，但是会再次出现之前的问题...</p>
 <p>还是以后手动发一遍那些posts吧，不过我已经备份过 Gridea 路径了，出问题就给他还原回去...</p>
 <p>可能是文章里某些特殊字符惹的祸？我也没啥特殊字符啊...</p>
+<p>Gitalk 需要 Github 账号才能发表评论，而且我Network Error的问题忘记怎么解决了，官方FAQ文档里这一条爷莫名其妙消失了，而disqus在国内貌似不能用，所以我打算加上Valine，以后再折腾吧。</p>
 ]]></content>
     </entry>
     <entry>
