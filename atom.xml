@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://studypony.github.io</id>
     <title>StudyPony&apos;s Blog</title>
-    <updated>2020-03-26T08:07:55.148Z</updated>
+    <updated>2020-03-26T08:14:21.811Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://studypony.github.io"/>
     <link rel="self" href="https://studypony.github.io/atom.xml"/>
@@ -16,7 +16,21 @@
         <link href="https://studypony.github.io/AU0Vttvd9/">
         </link>
         <updated>2020-03-26T07:54:09.000Z</updated>
-        <content type="html"><![CDATA[<p>大家好，这里是老罗。</p>
+        <summary type="html"><![CDATA[<p>原文地址：<img src="https://dfkan.com/13006.html" alt="https://dfkan.com/13006.html" loading="lazy"><br>
+原文标题：在易语言中引用动态链接库 ： [ECODING ADVANCED]<br>
+原文作者： ![社会主义接班骡]https://dfkan.com/author/luo2005<br>
+原文发布时间： 2020年2月25日<br>
+原文发布栏目：<img src="https://dfkan.com/article/codes" alt="代码之海" loading="lazy"><br>
+我已被授权搬运该文章，因为我就是原文作者。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>原文地址：<img src="https://dfkan.com/13006.html" alt="https://dfkan.com/13006.html" loading="lazy"><br>
+原文标题：在易语言中引用动态链接库 ： [ECODING ADVANCED]<br>
+原文作者： ![社会主义接班骡]https://dfkan.com/author/luo2005<br>
+原文发布时间： 2020年2月25日<br>
+原文发布栏目：<img src="https://dfkan.com/article/codes" alt="代码之海" loading="lazy"><br>
+我已被授权搬运该文章，因为我就是原文作者。</p>
+<!-- more -->
+<p>大家好，这里是老罗。</p>
 <p>月刊最近咕咕咕地厉害，其中也有我弃坑的原因。</p>
 <p>甚至，2018年7月后我们没有再发序言。</p>
 <p>对此，我深感愧疚和抱歉。</p>
