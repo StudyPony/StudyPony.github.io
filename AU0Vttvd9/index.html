@@ -1,22 +1,132 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://studypony.github.io</id>
-    <title>StudyPony&apos;s Blog</title>
-    <updated>2020-03-26T07:59:56.316Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://studypony.github.io"/>
-    <link rel="self" href="https://studypony.github.io/atom.xml"/>
-    <subtitle>Simple is Beauty. 简约即美。</subtitle>
-    <logo>https://studypony.github.io/images/avatar.png</logo>
-    <icon>https://studypony.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, StudyPony&apos;s Blog</rights>
-    <entry>
-        <title type="html"><![CDATA[在易语言中引用动态链接库]]></title>
-        <id>https://studypony.github.io/AU0Vttvd9/</id>
-        <link href="https://studypony.github.io/AU0Vttvd9/">
-        </link>
-        <updated>2020-03-26T07:54:09.000Z</updated>
-        <content type="html"><![CDATA[<p>本文转自<a href="https://dfkan.com/13006.html">淀粉月刊</a>，原文作者也是我。<br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>在易语言中引用动态链接库 | StudyPony&#39;s Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://studypony.github.io/favicon.ico?v=1585209590754">
+<link rel="stylesheet" href="https://studypony.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="本文转自淀粉月刊，原文作者也是我。
+转发记：还是把图片保存下来上传到我博客的空间吧，不要直接引用月刊的（
+
+作者： 社会主义接班骡 时间： 2020年2月25日 代码之海
+
+大家好，这里是老罗。
+月刊最近咕咕咕地厉害，其中也有我弃坑的原因。..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://studypony.github.io">
+        <img src="https://studypony.github.io/images/avatar.png?v=1585209590754" class="site-logo">
+        <h1 class="site-title">StudyPony&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/saFOo6v1B" class="site-nav" target="_blank">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://studypony.github.io/quqXIsbCE" class="site-nav" target="_blank">
+            文件
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/StudyPony/" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://twitter.com/ACZMUX" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://weibo.com/u/5321537059" target="_blank">
+            <i class="fab fa-weibo"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/mckm-62" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://www.facebook.com/profile.php?id=100039967668080" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        
+      
+    </div>
+    <div class="site-description">
+      Simple is Beauty. 简约即美。
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>. Hosted by <a href="https://pages.github.com" target="_blank">Github Pages</a> | <a class="rss" href="https://studypony.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">在易语言中引用动态链接库</h2>
+            <div class="post-date">2020-03-26</div>
+            
+            <div class="post-content" v-pre>
+              <p>本文转自<a href="https://dfkan.com/13006.html">淀粉月刊</a>，原文作者也是我。<br>
 转发记：还是把图片保存下来上传到我博客的空间吧，不要直接引用月刊的（<br>
 <img src="https://dfkan.com/wp-content/uploads/2020/02/1.gif" alt="测试一下是Github Pages快还是月刊搬瓦工快" loading="lazy"></p>
 <p>作者： 社会主义接班骡 时间： 2020年2月25日 代码之海<br>
@@ -72,120 +182,51 @@
 蓝奏云<br>
 （Dll的就下次说到再发吧~）</p>
 <p>3-24 修改备注：改掉了两个错别字</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello GitHub Pages]]></title>
-        <id>https://studypony.github.io/HelloGithubPages/</id>
-        <link href="https://studypony.github.io/HelloGithubPages/">
-        </link>
-        <updated>2020-03-17T13:27:06.000Z</updated>
-        <summary type="html"><![CDATA[<p>我又来白嫖了~</p>
-<p>这篇文章是手动恢复的，为了避免这个博客再次出现问题并Boom。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>我又来白嫖了~</p>
-<p>这篇文章是手动恢复的，为了避免这个博客再次出现问题并Boom。</p>
-<!-- more -->
-<p>原发布时间：2020-02-28 13:33:33</p>
-<p>你问我啥是手动恢复？就是打开原来的.md文件把标题和内容还有date复制出来粘贴。<br>
-原来有张图片，我还是给它翻出来吧。</p>
-<p>其实我也不知道把发布时间贴出来有啥用，没人在乎吧。</p>
-<p>我甚至觉得我也不在乎。</p>
-<p>行我逼话太多了赶紧给原来那张图片翻出来重新添加</p>
-<figure data-type="image" tabindex="1"><img src="https://studypony.github.io/post-images/1584451832411.jpg" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[加油加油加加油，加油小伙伴]]></title>
-        <id>https://studypony.github.io/Comeon/</id>
-        <link href="https://studypony.github.io/Comeon/">
-        </link>
-        <updated>2020-03-17T13:17:23.000Z</updated>
-        <summary type="html"><![CDATA[<p>疫情期间加油学习，盼望今夏金榜题名，不负青春！<br>
-😀</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>疫情期间加油学习，盼望今夏金榜题名，不负青春！<br>
-😀</p>
-<!-- more -->
-<p>今天恢复这篇原发布时间为2020-02-28 14:04:34的文章时顺便回复一下之前在这篇文章下面评论的那位路人，我也不知道你是怎么得知这个名不见经传的博客并留下了第一条评论的，但是我即将面临的不是高考，而是中考（捂脸）</p>
-<p>原来你的评论好像是这么说的：“小伙伴是要高考了吗”</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[1000：入门测试题目 【信息学奥赛一本通（C++版）在线评测系统】]]></title>
-        <id>https://studypony.github.io/YBT_1000/</id>
-        <link href="https://studypony.github.io/YBT_1000/">
-        </link>
-        <updated>2020-03-15T07:49:09.000Z</updated>
-        <summary type="html"><![CDATA[<p>「原题」</p>
-<blockquote>
-<p>1000：入门测试题目<br>
-时间限制: 1000 ms         内存限制: 32768 KB</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<p>「原题」</p>
-<blockquote>
-<p>1000：入门测试题目<br>
-时间限制: 1000 ms         内存限制: 32768 KB</p>
-</blockquote>
-<!-- more -->
-<blockquote>
-<p>提交数: 0     通过数: 0<br>
-【题目描述】<br>
-求两个整数的和。<br>
-【输入】<br>
-一行，两个用空格隔开的整数。<br>
-【输出】<br>
-两个整数的和。<br>
-【输入样例】<br>
-1 2<br>
-【输出样例】<br>
-3</p>
-<p>【来源】</p>
-<p><a href="http://ybt.ssoier.cn:8088/">信息学奥赛一本通（C++版）在线评测系统</a></p>
-</blockquote>
-<p>「分析」<br>
-新手不用理会「时间限制」和「内存限制」，大多数情况下到很后面才会出现TLE（Time Limit Exceed，超时）和MLE（Memory Limit Exceed，内存溢出，超内存），关于这些OJ（Online Judge，在线判题）术语，可以在下表中了解。<br>
-https://blog.csdn.net/JNingWei/article/details/78425824<br>
-至于这个问题，就是一个简单的A+B问题。</p>
-<p>「源码」</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-using namespace std;
-int main() {
-	int a,b;
-	scanf(&quot;%d%d&quot;,&amp;a,&amp;b);
-	cout &lt;&lt; a+b &lt;&lt; endl;
-}
-</code></pre>
-<p>在此处进行复制等操作时，您应了解CC 4.0 BY-SA协议。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[爆炸与重生]]></title>
-        <id>https://studypony.github.io/BoomAndRespawn/</id>
-        <link href="https://studypony.github.io/BoomAndRespawn/">
-        </link>
-        <updated>2020-03-15T03:56:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>之前不知道为什么这个只有4篇posts的博客就这么爆炸了= =</p>
-<p>我通过笨手笨脚的逐一排查找到了原因，有关这一问题你可以查看这两个Issue</p>
-<p><a href="https://github.com/getgridea/gridea/issues/468">数据莫名其妙没了？... #468</a><br>
-(我发出来丢人的Issue，居然还有两三个小伙伴遇到了同样的问题)</p>
-<p><a href="https://github.com/getgridea/gridea/issues/472">封面图格式出错导致数据丢失 #472</a><br>
-(然后第一个回复我的dalao折腾了很久找出了他的原因，但似乎并不是我的原因...)</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>之前不知道为什么这个只有4篇posts的博客就这么爆炸了= =</p>
-<p>我通过笨手笨脚的逐一排查找到了原因，有关这一问题你可以查看这两个Issue</p>
-<p><a href="https://github.com/getgridea/gridea/issues/468">数据莫名其妙没了？... #468</a><br>
-(我发出来丢人的Issue，居然还有两三个小伙伴遇到了同样的问题)</p>
-<p><a href="https://github.com/getgridea/gridea/issues/472">封面图格式出错导致数据丢失 #472</a><br>
-(然后第一个回复我的dalao折腾了很久找出了他的原因，但似乎并不是我的原因...)</p>
-<!-- more -->
-<p>我今天尝试了重新填入远程及主题参数（从之前的配置文件中手动复制出来的）然后暴力恢复原来的posts，但是会再次出现之前的问题...</p>
-<p>还是以后手动发一遍那些posts吧，不过我已经备份过 Gridea 路径了，出问题就给他还原回去...</p>
-<p>可能是文章里某些特殊字符惹的祸？我也没啥特殊字符啊...</p>
-<p>Gitalk 需要 Github 账号才能发表评论，而且我Network Error的问题忘记怎么解决了，官方FAQ文档里这一条爷莫名其妙消失了，而disqus在国内貌似不能用，所以我打算加上Valine，以后再折腾吧。</p>
-<p>3-26 15:49 加个<br>
-图 置顶</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://studypony.github.io/HelloGithubPages/">
+                  <h3 class="post-title">
+                    Hello GitHub Pages
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
