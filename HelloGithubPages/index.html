@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://studypony.github.io/favicon.ico?v=1585211561312">
+<link rel="shortcut icon" href="https://studypony.github.io/favicon.ico?v=1585211866689">
 <link rel="stylesheet" href="https://studypony.github.io/styles/main.css">
 
 
@@ -25,6 +25,24 @@
 你问我啥是手动恢复？就是打开原来的.md文件把标题和内容还有date复制出来粘贴。
 原来有张图片，我还是给..." />
     <meta name="keywords" content="" />
+	
+    <!--载入js，在</body>之前插入即可-->
+    <!--Leancloud 操作库:-->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库-->
+    <script src="https://studypony.github.io/media/Valine.min.js"></script>
+    <script>
+        new Valine({
+            // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+            av: AV, 
+            el: '.comment',
+            emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'DlOXDTkwKMuu8pXqceV6lzT5-gzGzoHsz',
+      app_key: 'QzXffjomF1kph0pH4uKuC2iJ ',
+      placeholder: '留下一条评论再走吧'
+        });
+    </script>
   </head>
   <body>
     <div id="app" class="main">
@@ -33,7 +51,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://studypony.github.io">
-        <img src="https://studypony.github.io/images/avatar.png?v=1585211561312" class="site-logo">
+        <img src="https://studypony.github.io/images/avatar.png?v=1585211866689" class="site-logo">
         <h1 class="site-title">StudyPony&#39;s Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -138,6 +156,8 @@
 
             </div>
             
+			    <!--评论显示区，请插入合适的位置-->
+				<div class="comment"></div>
             
               <div class="next-post">
                 <div class="next">下一篇</div>
