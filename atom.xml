@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://studypony.github.io</id>
     <title>StudyPony&apos;s Blog</title>
-    <updated>2020-03-26T09:08:56.133Z</updated>
+    <updated>2020-03-26T09:14:28.764Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://studypony.github.io"/>
     <link rel="self" href="https://studypony.github.io/atom.xml"/>
@@ -192,8 +192,7 @@ int main() {
 <p>还是以后手动发一遍那些posts吧，不过我已经备份过 Gridea 路径了，出问题就给他还原回去...</p>
 <p>可能是文章里某些特殊字符惹的祸？我也没啥特殊字符啊...</p>
 <p>Gitalk 需要 Github 账号才能发表评论，而且我Network Error的问题忘记怎么解决了，官方FAQ文档里这一条爷莫名其妙消失了，而disqus在国内貌似不能用，所以我打算加上Valine，以后再折腾吧。</p>
-<p>3-26 15:49 加个<br>
-图 置顶</p>
+<p>3-26 15:49 加个图 置顶</p>
 ]]></content>
     </entry>
 </feed>
