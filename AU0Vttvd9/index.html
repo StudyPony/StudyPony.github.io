@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://studypony.github.io/favicon.ico?v=1585214066219">
+<link rel="shortcut icon" href="https://studypony.github.io/favicon.ico?v=1585271815840">
 <link rel="stylesheet" href="https://studypony.github.io/styles/main.css">
 
 
@@ -20,7 +20,10 @@
 
     <meta name="description" content="原文地址：https://dfkan.com/13006.html
 原文标题：在易语言中引用动态链接库 ： [ECODING ADVANCED]
-原文作者： [社会主义接班骡]https://dfkan.com/author/luo2005..." />
+原文作者： 社会主义接班骡
+原文发布时间： 2020年2月25日
+原文发布栏目：代码之海
+我已..." />
     <meta name="keywords" content="" />
 	
     <!--载入js，在</body>之前插入即可-->
@@ -29,11 +32,13 @@
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
     <!--Valine 的核心代码库-->
     <script src="https://studypony.github.io/media/Valine.min.js"></script>
+	<div class="comment"></div>
     <script>
         new Valine({
             // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
             av: AV, 
-            el: '.comment',
+            el: '#vcomments',
+			lang: 'zh-cn',//设置评论语言
             emoticon_url: 'https://cloud.panjunwen.com/alu',
       emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
       app_id: 'DlOXDTkwKMuu8pXqceV6lzT5-gzGzoHsz',
@@ -49,7 +54,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://studypony.github.io">
-        <img src="https://studypony.github.io/images/avatar.png?v=1585214066219" class="site-logo">
+        <img src="https://studypony.github.io/images/avatar.png?v=1585271815840" class="site-logo">
         <h1 class="site-title">StudyPony&#39;s Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -143,7 +148,7 @@
             <div class="post-content" v-pre>
               <p>原文地址：<a href="https://dfkan.com/13006.html">https://dfkan.com/13006.html</a><br>
 原文标题：在易语言中引用动态链接库 ： [ECODING ADVANCED]<br>
-原文作者： [社会主义接班骡]https://dfkan.com/author/luo2005<br>
+原文作者： <a href="https://dfkan.com/author/luo2005">社会主义接班骡</a><br>
 原文发布时间： 2020年2月25日<br>
 原文发布栏目：<a href="https://dfkan.com/article/codes">代码之海</a><br>
 我已被授权搬运该文章，因为我就是原文作者。</p>

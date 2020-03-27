@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://studypony.github.io</id>
     <title>StudyPony&apos;s Blog</title>
-    <updated>2020-03-26T09:14:28.764Z</updated>
+    <updated>2020-03-27T01:17:01.637Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://studypony.github.io"/>
     <link rel="self" href="https://studypony.github.io/atom.xml"/>
@@ -18,14 +18,14 @@
         <updated>2020-03-26T07:54:09.000Z</updated>
         <summary type="html"><![CDATA[<p>原文地址：<a href="https://dfkan.com/13006.html">https://dfkan.com/13006.html</a><br>
 原文标题：在易语言中引用动态链接库 ： [ECODING ADVANCED]<br>
-原文作者： [社会主义接班骡]https://dfkan.com/author/luo2005<br>
+原文作者： <a href="https://dfkan.com/author/luo2005">社会主义接班骡</a><br>
 原文发布时间： 2020年2月25日<br>
 原文发布栏目：<a href="https://dfkan.com/article/codes">代码之海</a><br>
 我已被授权搬运该文章，因为我就是原文作者。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>原文地址：<a href="https://dfkan.com/13006.html">https://dfkan.com/13006.html</a><br>
 原文标题：在易语言中引用动态链接库 ： [ECODING ADVANCED]<br>
-原文作者： [社会主义接班骡]https://dfkan.com/author/luo2005<br>
+原文作者： <a href="https://dfkan.com/author/luo2005">社会主义接班骡</a><br>
 原文发布时间： 2020年2月25日<br>
 原文发布栏目：<a href="https://dfkan.com/article/codes">代码之海</a><br>
 我已被授权搬运该文章，因为我就是原文作者。</p>
@@ -169,30 +169,15 @@ int main() {
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[爆炸与重生]]></title>
+        <title type="html"><![CDATA[博客迁坟]]></title>
         <id>https://studypony.github.io/BoomAndRespawn/</id>
         <link href="https://studypony.github.io/BoomAndRespawn/">
         </link>
         <updated>2020-03-15T03:56:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>之前不知道为什么这个只有4篇posts的博客就这么爆炸了= =</p>
-<p>我通过笨手笨脚的逐一排查找到了原因，有关这一问题你可以查看这两个Issue</p>
-<p><a href="https://github.com/getgridea/gridea/issues/468">数据莫名其妙没了？... #468</a><br>
-(我发出来丢人的Issue，居然还有两三个小伙伴遇到了同样的问题)</p>
-<p><a href="https://github.com/getgridea/gridea/issues/472">封面图格式出错导致数据丢失 #472</a><br>
-(然后第一个回复我的dalao折腾了很久找出了他的原因，但似乎并不是我的原因...)</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>之前不知道为什么这个只有4篇posts的博客就这么爆炸了= =</p>
-<p>我通过笨手笨脚的逐一排查找到了原因，有关这一问题你可以查看这两个Issue</p>
-<p><a href="https://github.com/getgridea/gridea/issues/468">数据莫名其妙没了？... #468</a><br>
-(我发出来丢人的Issue，居然还有两三个小伙伴遇到了同样的问题)</p>
-<p><a href="https://github.com/getgridea/gridea/issues/472">封面图格式出错导致数据丢失 #472</a><br>
-(然后第一个回复我的dalao折腾了很久找出了他的原因，但似乎并不是我的原因...)</p>
-<!-- more -->
-<p>我今天尝试了重新填入远程及主题参数（从之前的配置文件中手动复制出来的）然后暴力恢复原来的posts，但是会再次出现之前的问题...</p>
-<p>还是以后手动发一遍那些posts吧，不过我已经备份过 Gridea 路径了，出问题就给他还原回去...</p>
-<p>可能是文章里某些特殊字符惹的祸？我也没啥特殊字符啊...</p>
-<p>Gitalk 需要 Github 账号才能发表评论，而且我Network Error的问题忘记怎么解决了，官方FAQ文档里这一条爷莫名其妙消失了，而disqus在国内貌似不能用，所以我打算加上Valine，以后再折腾吧。</p>
-<p>3-26 15:49 加个图 置顶</p>
+        <content type="html"><![CDATA[<p>使用了Coding Pages（现已改名为静态页面服务），不知道速度会不会好一点。<br>
+Valine评论系统整好了（其实是依靠凛这个主题实现的，我用自带主题中最喜欢的Simple没法成功显示评论...）<br>
+届时此处将停止更新。</p>
+<h1 id="点击跳转"><a href="https://hxza3t.coding-pages.com/">点击跳转</a></h1>
 ]]></content>
     </entry>
 </feed>
