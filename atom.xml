@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://studypony.github.io</id>
     <title>StudyPony&apos;s Blog</title>
-    <updated>2020-03-27T12:20:35.456Z</updated>
+    <updated>2020-03-27T12:31:05.593Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://studypony.github.io"/>
     <link rel="self" href="https://studypony.github.io/atom.xml"/>
@@ -11,165 +11,7 @@
     <icon>https://studypony.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, StudyPony&apos;s Blog</rights>
     <entry>
-        <title type="html"><![CDATA[在易语言中引用动态链接库]]></title>
-        <id>https://studypony.github.io/AU0Vttvd9/</id>
-        <link href="https://studypony.github.io/AU0Vttvd9/">
-        </link>
-        <updated>2020-03-26T07:54:09.000Z</updated>
-        <summary type="html"><![CDATA[<p>原文地址：<a href="https://dfkan.com/13006.html">https://dfkan.com/13006.html</a><br>
-原文标题：在易语言中引用动态链接库 ： [ECODING ADVANCED]<br>
-原文作者： <a href="https://dfkan.com/author/luo2005">社会主义接班骡</a><br>
-原文发布时间： 2020年2月25日<br>
-原文发布栏目：<a href="https://dfkan.com/article/codes">代码之海</a><br>
-我已被授权搬运该文章，因为我就是原文作者。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>原文地址：<a href="https://dfkan.com/13006.html">https://dfkan.com/13006.html</a><br>
-原文标题：在易语言中引用动态链接库 ： [ECODING ADVANCED]<br>
-原文作者： <a href="https://dfkan.com/author/luo2005">社会主义接班骡</a><br>
-原文发布时间： 2020年2月25日<br>
-原文发布栏目：<a href="https://dfkan.com/article/codes">代码之海</a><br>
-我已被授权搬运该文章，因为我就是原文作者。</p>
-<!-- more -->
-<p>大家好，这里是老罗。</p>
-<p>月刊最近咕咕咕地厉害，其中也有我弃坑的原因。</p>
-<p>甚至，2018年7月后我们没有再发序言。</p>
-<p>对此，我深感愧疚和抱歉。</p>
-<p>总之，我们先开始今天的易语言进阶教程吧。</p>
-<p>考虑到内容深度应循序渐进，本次所使用的dll大家可以直接从下面的链接中下载（也只能从这里下载233）</p>
-<p><a href="http://t.cn/A6hBI0Y9" title="蓝奏云">蓝奏云</a></p>
-<p>先来看看效果（要不然懒癌们怎么肯打开易语言写这个东东呢）</p>
-<figure data-type="image" tabindex="1"><img src="https://studypony.github.io/post-images/1585209418782.gif" alt="" loading="lazy"></figure>
-<h6 id="testexe仅为一个空的易语言程序">test.exe仅为一个空的易语言程序</h6>
-<p>可以看到，渐变的文字一直跟随着test.exe的窗体，是不是非常**（l）<strong>炫</strong>（o）<strong>酷</strong>（w）**呢？</p>
-<p>接下来我们来学习如何引用这个（点击下载）<a href="http://t.cn/A6hBI0Y9" title="**FormTrackingRuntime.dll**"><strong>FormTrackingRuntime.dll</strong></a>（意译过来就是<strong>窗体跟踪运行库</strong>）。这名字怎么这么奇怪？因为这玩意儿是我开发的，名字也是我起的。（此处无法插入表情？）</p>
-<p>打开易语言，我们先新建一个普通的空白的<strong>Windows窗体程序</strong>。在工作夹中选择**“程序”<strong>选项卡，然后在</strong>“程序数据**”上右击，选择**“L.新Dll命令”<strong>,然后在右侧编辑区域将</strong>“Dll命令名”<strong>改为</strong>“FormTracking_Start”<strong>（或你喜欢的其它名字，待会儿我们将引用这个Dll命令，方法类似于引用子程序），将</strong>“库文件名”<strong>改为</strong>“FormTrackingRuntime”<strong>（带不带.dll的后缀无所谓，其实你也可以通过修改dll文件的名称来改变这一项——只要你高兴），将“在库中对应命令名”改为“FormTracking_Start”。最后，创建四个参数，第一个为整数型的“窗口句柄”，另外三个分别为</strong>“内容1”、“内容2”、“内容3”<strong>，均为</strong>文本型**。</p>
-<p>接下来，我们在**&quot;_启动窗口&quot;<strong>中创建一个</strong>“组合框”<strong>、三个</strong>“编辑框”<strong>和一个</strong>“按钮”**。</p>
-<p>那么，怎么在**“组合框”**下拉时显示当前正运行的所有进程及其PID呢？我们并不知道当前有多少进程，因此，一个古老的算法匆匆上马——</p>
-<h4 id="枚举"><strong>枚举</strong>。</h4>
-<p>为了尽可能减少第一篇易语言进阶教程的难度，使其对渴望精英化自己更进一步（哦，我明日方舟玩多了）的淀粉更友好，这里我推荐使用<strong>精易模块</strong>。</p>
-<p>易语言模块的扩展名为**.ec**，使用<strong>易语言助手</strong>可以方便地查看它们的<strong>作者、版本、公开子程序</strong>等信息，这涉及到安装支持库，为了不使这篇易语言进阶实战教程显得冗长，我们下次再说。</p>
-<p>如何导入别人的易语言模块呢？我们在<strong>工作夹</strong>的**“程序”<strong>选项卡中双击</strong>“模块引用表”**这一项，即可导入新的易语言模块。需要注意的是，导入的易模块有权在你没有引用其中的任何子程序时运行一些奇奇怪怪的东西，为了你和接受你编写的程序的用户的计算机安全，<strong>请不要使用来历不明的易模块</strong>。</p>
-<p>那为什么精易模块就可以放心用了呢？因为它是<strong>开源</strong>的，即所有用户都可以免费地、随时获取它的<strong>源代码</strong>（<a href="http://ec.125.la/" title="官网地址">官网地址</a>），你可以使用这份源码编译出专属于你的一份精易模块，在此也不再赘述。（那么.ec文件是什么？它是<strong>目标代码</strong>。我们日常使用的各种程序，如我提供的dll，腾讯的QQ.exe，以及在应用商店下载的apk都属于<strong>目标代码</strong>，它们不便于或难于编辑以及理解意义。关于开源的相关信息，你可以以**“开源”<strong>或</strong>“open source”**在搜索引擎上搜索）</p>
-<p>回到正题，我们在对象设计编辑界面（好吧，我也不知道这是什么界面）选中这个<strong>组合框</strong>，然后在<strong>工作夹</strong>中选择**“属性”<strong>选项卡，这时</strong>工作夹<strong>底部有一个</strong>“在此处选择加入事件处理子程序”<strong>的</strong>组合框**（或者说是下拉列表框），选择**“将弹出列表”**，此时将自动跳转到代码编辑界面并创建子程序。</p>
-<p>我们先使用**“组合框1.清空 ()”<strong>这行代码来清空先前组合框中已经存在的内容（这里“组合框1”是默认的对象名称），以免出现溢出或指向错乱等问题；然后使用“计次循环首”这个位于</strong>“系统核心支持库-&gt;流程控制”<strong>中的子程序，并创建一个名为“int”的</strong>局部变量**，类型为<strong>整数型</strong>（当然这些变量名称都随你开心），用于记录<strong>枚举了多少个进程</strong>（这也是不使用“判断循环首（）”的原因）。</p>
-<p>接下来是继续循环的条件问题，好在精易模块提供的**“进程_枚举”<strong>子程序有</strong>整数型<strong>的</strong>返回值**：<em>失败返回0，成功返回进程数量</em>。我们可以直接用它作为循环条件，因为***所有非0整数都会（在强制类型转换中？）被视为逻辑型的“真”，而0被视为“假”。***</p>
-<p>那么循环中我们要干什么呢？当然是一个一个添加这些进程名称及其PID了！你可以使用**“组合框1.加入项目()”<strong>来向</strong>组合框1<strong>中加入项目。虽然这一子程序有一个可选参数为</strong>“与欲加入项目相关的数值”<strong>，但这并不会显示出来，所以我们不应传递PID到这一参数；相反，我们应该使用</strong>“到文本（）”<strong>和加号来将</strong>PID<strong>与前面的</strong>进程名称<strong>连接起来加入，并在中间插入一个</strong>“|”<strong>（即Shift+顿号在英文半角下输入的竖，不是中文输入法下输入的“丨”，当然统一用后者应该也没问题）作为</strong>分隔符**。</p>
-<p>那么怎么获取进程名称和PID并储存呢？获取我们可以在循环首的枚举语句中获取，而储存，就需要用到数组了。<br>
-我们此处设立两个数组，一个<strong>name</strong>一个<strong>pid</strong>，像定义变量一样操作并在**“数组”<strong>一栏中填写</strong>0**即可。</p>
-<p>所以，像</p>
-<p><em><strong>计次循环首 (进程_枚举 (name, pid), int)</strong></em></p>
-<p>这样就能在循环开始时判断是否该进行此次添加，并获取第<strong>int</strong>个进程的<strong>name</strong>和<strong>pid</strong>了。</p>
-<p>循环首尾之间的一句话就很简单了，</p>
-<p><code>组合框1.加入项目 (name [int] ＋ “|” ＋ 到文本 (pid [int]), )</code></p>
-<p>接下来，单击按钮后我们该怎么调用刚才定义的Dll命令呢？这里我偷了个懒，并不想获取此时组合框选中的是哪一项并把刚才的局部变量转为程序集变量，而是——利用“分割文本”子程序。这段比较简单，我就直接贴代码了：</p>
-<p>`.版本 2</p>
-<p>`.子程序 _按钮1_被单击</p>
-<p><code>.局部变量 text, 文本型, , &quot;0&quot;</code></p>
-<p><code>text ＝ 分割文本 (组合框1.取项目文本 (组合框1.现行选中项), “|”, )</code></p>
-<p><code>FormTracking_Start (进程_ID取窗口句柄 (到整数 (text [2]), , , ), 编辑框1.内容, 编辑框2.内容, 编辑框3.内容)``</code><br>
-这就结束了，我是老罗，我们下次再见（也许要咕咕咕很久，珍惜这篇文章吧）</p>
-<p>然后是本栏目的完结留念（大雾</p>
-<p>（这篇文章哔哔的所有要素都在这张图片里了——除了Dll命令）<br>
-<img src="https://studypony.github.io/post-images/1585209442467.png" alt="" loading="lazy"></p>
-<p>那么Dll命令的部分<img src="https://studypony.github.io/post-images/1585209456964.gif" alt="" loading="lazy"><br>
-<img src="https://studypony.github.io/post-images/1585209465845.png" alt="" loading="lazy"></p>
-<p>下期预告：<br>
-其实我也没想好写什么，这期也是硬怼怼上来的...讲dll的话太繁琐了，讲test.exe？完全没技术含量呢~<br>
-要不还是讲讲易语言助手和exui支持库吧~</p>
-<p>P.S. 本期成品及源码奉上~<br>
-<a href="https://www.lanzous.com/b0839qztg" title="蓝奏云">蓝奏云</a><br>
-（Dll的就下次说到再发吧~）</p>
-<p>3-24 修改备注：改掉了两个错别字</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello GitHub Pages]]></title>
-        <id>https://studypony.github.io/HelloGithubPages/</id>
-        <link href="https://studypony.github.io/HelloGithubPages/">
-        </link>
-        <updated>2020-03-17T13:27:06.000Z</updated>
-        <summary type="html"><![CDATA[<p>我又来白嫖了~</p>
-<p>这篇文章是手动恢复的，为了避免这个博客再次出现问题并Boom。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>我又来白嫖了~</p>
-<p>这篇文章是手动恢复的，为了避免这个博客再次出现问题并Boom。</p>
-<!-- more -->
-<p>原发布时间：2020-02-28 13:33:33</p>
-<p>你问我啥是手动恢复？就是打开原来的.md文件把标题和内容还有date复制出来粘贴。<br>
-原来有张图片，我还是给它翻出来吧。</p>
-<p>其实我也不知道把发布时间贴出来有啥用，没人在乎吧。</p>
-<p>我甚至觉得我也不在乎。</p>
-<p>行我逼话太多了赶紧给原来那张图片翻出来重新添加</p>
-<figure data-type="image" tabindex="1"><img src="https://studypony.github.io/post-images/1584451832411.jpg" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[加油加油加加油，加油小伙伴]]></title>
-        <id>https://studypony.github.io/Comeon/</id>
-        <link href="https://studypony.github.io/Comeon/">
-        </link>
-        <updated>2020-03-17T13:17:23.000Z</updated>
-        <summary type="html"><![CDATA[<p>疫情期间加油学习，盼望今夏金榜题名，不负青春！<br>
-😀</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>疫情期间加油学习，盼望今夏金榜题名，不负青春！<br>
-😀</p>
-<!-- more -->
-<p>今天恢复这篇原发布时间为2020-02-28 14:04:34的文章时顺便回复一下之前在这篇文章下面评论的那位路人，我也不知道你是怎么得知这个名不见经传的博客并留下了第一条评论的，但是我即将面临的不是高考，而是中考（捂脸）</p>
-<p>原来你的评论好像是这么说的：“小伙伴是要高考了吗”</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[1000：入门测试题目 【信息学奥赛一本通（C++版）在线评测系统】]]></title>
-        <id>https://studypony.github.io/YBT_1000/</id>
-        <link href="https://studypony.github.io/YBT_1000/">
-        </link>
-        <updated>2020-03-15T07:49:09.000Z</updated>
-        <summary type="html"><![CDATA[<p>「原题」</p>
-<blockquote>
-<p>1000：入门测试题目<br>
-时间限制: 1000 ms         内存限制: 32768 KB</p>
-</blockquote>
-]]></summary>
-        <content type="html"><![CDATA[<p>「原题」</p>
-<blockquote>
-<p>1000：入门测试题目<br>
-时间限制: 1000 ms         内存限制: 32768 KB</p>
-</blockquote>
-<!-- more -->
-<blockquote>
-<p>提交数: 0     通过数: 0<br>
-【题目描述】<br>
-求两个整数的和。<br>
-【输入】<br>
-一行，两个用空格隔开的整数。<br>
-【输出】<br>
-两个整数的和。<br>
-【输入样例】<br>
-1 2<br>
-【输出样例】<br>
-3</p>
-<p>【来源】</p>
-<p><a href="http://ybt.ssoier.cn:8088/">信息学奥赛一本通（C++版）在线评测系统</a></p>
-</blockquote>
-<p>「分析」<br>
-新手不用理会「时间限制」和「内存限制」，大多数情况下到很后面才会出现TLE（Time Limit Exceed，超时）和MLE（Memory Limit Exceed，内存溢出，超内存），关于这些OJ（Online Judge，在线判题）术语，可以在下表中了解。<br>
-https://blog.csdn.net/JNingWei/article/details/78425824<br>
-至于这个问题，就是一个简单的A+B问题。</p>
-<p>「源码」</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-using namespace std;
-int main() {
-	int a,b;
-	scanf(&quot;%d%d&quot;,&amp;a,&amp;b);
-	cout &lt;&lt; a+b &lt;&lt; endl;
-}
-</code></pre>
-<p>在此处进行复制等操作时，您应了解CC 4.0 BY-SA协议。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[博客迁坟]]></title>
+        <title type="html"><![CDATA[博客迁坟（请移步新博客）]]></title>
         <id>https://studypony.github.io/BoomAndRespawn/</id>
         <link href="https://studypony.github.io/BoomAndRespawn/">
         </link>
@@ -177,7 +19,8 @@ int main() {
         <content type="html"><![CDATA[<p>使用了Coding Pages（现已改名为静态页面服务），不知道速度会不会好一点。<br>
 Valine评论系统整好了（其实是依靠凛这个主题实现的，我用自带主题中最喜欢的Simple没法成功显示评论...）<br>
 届时此处将停止更新。</p>
-<h1 id="点击跳转"><a href="https://hxza3t.coding-pages.com/">点击跳转</a></h1>
+<h1 id="点击跳转"><a href="https://hxza3t.coding-pages.com/">点击跳转</a>（https://hxza3t.coding-pages.com/）</h1>
+<h1 id="易记域名httpbpurplesunxyz-httpblogpurplesunxyz-问题是没有ssl要不要改成显性跳转呢">易记域名：http://b.purplesun.xyz/ http://blog.purplesun.xyz/ （问题是没有SSL，要不要改成显性跳转呢...）</h1>
 ]]></content>
     </entry>
 </feed>
