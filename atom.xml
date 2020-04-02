@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://studypony.github.io</id>
     <title>紫阳·祥云</title>
-    <updated>2020-04-02T05:09:02.273Z</updated>
+    <updated>2020-04-02T05:09:35.690Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://studypony.github.io"/>
     <link rel="self" href="https://studypony.github.io/atom.xml"/>
@@ -10,4 +10,17 @@
     <logo>https://studypony.github.io/images/avatar.png</logo>
     <icon>https://studypony.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 紫阳·祥云</rights>
+    <entry>
+        <title type="html"><![CDATA[博客迁坟（请移步新博客）]]></title>
+        <id>https://studypony.github.io/BoomAndRespawn/</id>
+        <link href="https://studypony.github.io/BoomAndRespawn/">
+        </link>
+        <updated>2020-03-15T03:56:36.000Z</updated>
+        <content type="html"><![CDATA[<p>使用了Coding Pages（现已改名为静态页面服务），不知道速度会不会好一点。<br>
+Valine评论系统整好了（其实是依靠凛这个主题实现的，我用自带主题中最喜欢的Simple没法成功显示评论...）<br>
+届时此处将停止更新。</p>
+<h1 id="点击跳转"><a href="https://hxza3t.coding-pages.com/">点击跳转</a>（https://hxza3t.coding-pages.com/）</h1>
+<h1 id="易记域名httpbpurplesunxyz-httpblogpurplesunxyz-问题是没有ssl要不要改成显性跳转呢">易记域名：http://b.purplesun.xyz/ http://blog.purplesun.xyz/ （问题是没有SSL，要不要改成显性跳转呢...）</h1>
+]]></content>
+    </entry>
 </feed>
